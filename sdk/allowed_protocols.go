@@ -117,6 +117,8 @@ type ResponseAllowedProtocolsGetAllowedProtocolByNameAllowedProtocolsTeap struct
 	AcceptClientCertDuringTunnelEst      *bool `json:"acceptClientCertDuringTunnelEst,omitempty"`      //
 	EnableEapChaining                    *bool `json:"enableEapChaining,omitempty"`                    //
 	AllowDowngradeMsk                    *bool `json:"allowDowngradeMsk,omitempty"`                    //
+	RequestBasicPwdAuth                  *bool `json:"requestBasicPwdAuth,omitempty"`                  //
+
 }
 
 type ResponseAllowedProtocolsGetAllowedProtocolByNameAllowedProtocolsLink struct {
@@ -227,6 +229,7 @@ type ResponseAllowedProtocolsGetAllowedProtocolByIDAllowedProtocolsTeap struct {
 	AcceptClientCertDuringTunnelEst      *bool `json:"acceptClientCertDuringTunnelEst,omitempty"`      //
 	EnableEapChaining                    *bool `json:"enableEapChaining,omitempty"`                    //
 	AllowDowngradeMsk                    *bool `json:"allowDowngradeMsk,omitempty"`                    //
+	RequestBasicPwdAuth                  *bool `json:"requestBasicPwdAuth,omitempty"`
 }
 
 type ResponseAllowedProtocolsGetAllowedProtocolByIDAllowedProtocolsLink struct {
@@ -405,6 +408,7 @@ type RequestAllowedProtocolsUpdateAllowedProtocolByIDAllowedProtocolsTeap struct
 	AcceptClientCertDuringTunnelEst      *bool `json:"acceptClientCertDuringTunnelEst,omitempty"`      //
 	EnableEapChaining                    *bool `json:"enableEapChaining,omitempty"`                    //
 	AllowDowngradeMsk                    *bool `json:"allowDowngradeMsk,omitempty"`                    //
+	RequestBasicPwdAuth                  *bool `json:"requestBasicPwdAuth,omitempty"`
 }
 
 type RequestAllowedProtocolsCreateAllowedProtocol struct {
@@ -507,6 +511,7 @@ type RequestAllowedProtocolsCreateAllowedProtocolAllowedProtocolsTeap struct {
 	AcceptClientCertDuringTunnelEst      *bool `json:"acceptClientCertDuringTunnelEst,omitempty"`      //
 	EnableEapChaining                    *bool `json:"enableEapChaining,omitempty"`                    //
 	AllowDowngradeMsk                    *bool `json:"allowDowngradeMsk,omitempty"`                    //
+	RequestBasicPwdAuth                  *bool `json:"requestBasicPwdAuth,omitempty"`
 }
 
 //GetAllowedProtocolByName Get allowed protocol by name
