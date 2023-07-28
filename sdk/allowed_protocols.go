@@ -29,6 +29,7 @@ type ResponseAllowedProtocolsGetAllowedProtocolByNameAllowedProtocols struct {
 	EapTtls                   *ResponseAllowedProtocolsGetAllowedProtocolByNameAllowedProtocolsEapTtls `json:"eapTtls,omitempty"`                   // The eapTtls is required only if allowEapTtls is true, otherwise it must be ignored. The object eapTtls contains the settings for EAP TTLS protocol
 	Teap                      *ResponseAllowedProtocolsGetAllowedProtocolByNameAllowedProtocolsTeap    `json:"teap,omitempty"`                      // The teap is required only if allowTeap is true, otherwise it must be ignored. The object teap contains the settings for TEAP protocol
 	ProcessHostLookup         *bool                                                                    `json:"processHostLookup,omitempty"`         //
+	FiveG                     *bool                                                                    `json:"fiveG,omitempty"`                     //
 	AllowPapAscii             *bool                                                                    `json:"allowPapAscii,omitempty"`             //
 	AllowChap                 *bool                                                                    `json:"allowChap,omitempty"`                 //
 	AllowMsChapV1             *bool                                                                    `json:"allowMsChapV1,omitempty"`             //
@@ -141,6 +142,7 @@ type ResponseAllowedProtocolsGetAllowedProtocolByIDAllowedProtocols struct {
 	EapTtls                   *ResponseAllowedProtocolsGetAllowedProtocolByIDAllowedProtocolsEapTtls `json:"eapTtls,omitempty"`                   // The eapTtls is required only if allowEapTtls is true, otherwise it must be ignored. The object eapTtls contains the settings for EAP TTLS protocol
 	Teap                      *ResponseAllowedProtocolsGetAllowedProtocolByIDAllowedProtocolsTeap    `json:"teap,omitempty"`                      // The teap is required only if allowTeap is true, otherwise it must be ignored. The object teap contains the settings for TEAP protocol
 	ProcessHostLookup         *bool                                                                  `json:"processHostLookup,omitempty"`         //
+	FiveG                     *bool                                                                  `json:"fiveG,omitempty"`                     //
 	AllowPapAscii             *bool                                                                  `json:"allowPapAscii,omitempty"`             //
 	AllowChap                 *bool                                                                  `json:"allowChap,omitempty"`                 //
 	AllowMsChapV1             *bool                                                                  `json:"allowMsChapV1,omitempty"`             //
@@ -321,6 +323,7 @@ type RequestAllowedProtocolsUpdateAllowedProtocolByIDAllowedProtocols struct {
 	EapTtls                   *RequestAllowedProtocolsUpdateAllowedProtocolByIDAllowedProtocolsEapTtls `json:"eapTtls,omitempty"`                   // The eapTtls is required only if allowEapTtls is true, otherwise it must be ignored. The object eapTtls contains the settings for EAP TTLS protocol
 	Teap                      *RequestAllowedProtocolsUpdateAllowedProtocolByIDAllowedProtocolsTeap    `json:"teap,omitempty"`                      // The teap is required only if allowTeap is true, otherwise it must be ignored. The object teap contains the settings for TEAP protocol
 	ProcessHostLookup         *bool                                                                    `json:"processHostLookup,omitempty"`         //
+	FiveG                     *bool                                                                    `json:"fiveG,omitempty"`                     //
 	AllowPapAscii             *bool                                                                    `json:"allowPapAscii,omitempty"`             //
 	AllowChap                 *bool                                                                    `json:"allowChap,omitempty"`                 //
 	AllowMsChapV1             *bool                                                                    `json:"allowMsChapV1,omitempty"`             //
@@ -424,6 +427,7 @@ type RequestAllowedProtocolsCreateAllowedProtocolAllowedProtocols struct {
 	EapTtls                   *RequestAllowedProtocolsCreateAllowedProtocolAllowedProtocolsEapTtls `json:"eapTtls,omitempty"`                   // The eapTtls is required only if allowEapTtls is true, otherwise it must be ignored. The object eapTtls contains the settings for EAP TTLS protocol
 	Teap                      *RequestAllowedProtocolsCreateAllowedProtocolAllowedProtocolsTeap    `json:"teap,omitempty"`                      // The teap is required only if allowTeap is true, otherwise it must be ignored. The object teap contains the settings for TEAP protocol
 	ProcessHostLookup         *bool                                                                `json:"processHostLookup,omitempty"`         //
+	FiveG                     *bool                                                                `json:"fiveG,omitempty"`                     //
 	AllowPapAscii             *bool                                                                `json:"allowPapAscii,omitempty"`             //
 	AllowChap                 *bool                                                                `json:"allowChap,omitempty"`                 //
 	AllowMsChapV1             *bool                                                                `json:"allowMsChapV1,omitempty"`             //
