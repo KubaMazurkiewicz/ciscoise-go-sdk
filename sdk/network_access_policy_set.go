@@ -653,6 +653,8 @@ func (s *NetworkAccessPolicySetService) CreateNetworkAccessPolicySet(requestNetw
 		SetResult(&ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySet{}).
 		SetError(&Error).
 		Post(path)
+	fmt.Println("TESTTESTTEST")
+	fmt.Println(response)
 
 	if err != nil {
 		if err.Error() == emptyStringToJSONError {
