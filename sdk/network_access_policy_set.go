@@ -55,26 +55,6 @@ type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetsResponseConditionLi
 	Type string `json:"type,omitempty"` //
 }
 
-type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetsResponseConditionChildren struct {
-	ConditionType   string                                                                                 `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                                  `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetsResponseConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                                 `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                                 `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                                 `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                                 `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                                 `json:"description,omitempty"`     // Condition description
-	ID              string                                                                                 `json:"id,omitempty"`              //
-	Name            string                                                                                 `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                                 `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetsResponseConditionChildrenLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
 type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetsResponseConditionDatesRange struct {
 	EndDate   string `json:"endDate,omitempty"`   //
 	StartDate string `json:"startDate,omitempty"` //
@@ -142,26 +122,6 @@ type ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySetResponseCondition
 }
 
 type ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySetResponseConditionLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
-type ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySetResponseConditionChildren struct {
-	ConditionType   string                                                                                   `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                                    `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySetResponseConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                                   `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                                   `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                                   `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                                   `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                                   `json:"description,omitempty"`     // Condition description
-	ID              string                                                                                   `json:"id,omitempty"`              //
-	Name            string                                                                                   `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                                   `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type ResponseNetworkAccessPolicySetCreateNetworkAccessPolicySetResponseConditionChildrenLink struct {
 	Href string `json:"href,omitempty"` //
 	Rel  string `json:"rel,omitempty"`  //
 	Type string `json:"type,omitempty"` //
@@ -243,26 +203,6 @@ type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetByIDResponseConditio
 	Type string `json:"type,omitempty"` //
 }
 
-type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetByIDResponseConditionChildren struct {
-	ConditionType   string                                                                                    `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                                     `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetByIDResponseConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                                    `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                                    `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                                    `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                                    `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                                    `json:"description,omitempty"`     // Condition description
-	ID              string                                                                                    `json:"id,omitempty"`              //
-	Name            string                                                                                    `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                                    `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetByIDResponseConditionChildrenLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
 type ResponseNetworkAccessPolicySetGetNetworkAccessPolicySetByIDResponseConditionDatesRange struct {
 	EndDate   string `json:"endDate,omitempty"`   //
 	StartDate string `json:"startDate,omitempty"` //
@@ -330,26 +270,6 @@ type ResponseNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDResponseCondi
 }
 
 type ResponseNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDResponseConditionLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
-type ResponseNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDResponseConditionChildren struct {
-	ConditionType   string                                                                                       `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                                        `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *ResponseNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDResponseConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                                       `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                                       `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                                       `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                                       `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                                       `json:"description,omitempty"`     // Condition description
-	ID              string                                                                                       `json:"id,omitempty"`              //
-	Name            string                                                                                       `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                                       `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type ResponseNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDResponseConditionChildrenLink struct {
 	Href string `json:"href,omitempty"` //
 	Rel  string `json:"rel,omitempty"`  //
 	Type string `json:"type,omitempty"` //
@@ -426,26 +346,6 @@ type RequestNetworkAccessPolicySetCreateNetworkAccessPolicySetConditionLink stru
 	Type string `json:"type,omitempty"` //
 }
 
-type RequestNetworkAccessPolicySetCreateNetworkAccessPolicySetConditionChildren struct {
-	ConditionType   string                                                                          `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                           `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *RequestNetworkAccessPolicySetCreateNetworkAccessPolicySetConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                          `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                          `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                          `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                          `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                          `json:"description,omitempty"`     // Condition description
-	ID              string                                                                          `json:"id,omitempty"`              //
-	Name            string                                                                          `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                          `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type RequestNetworkAccessPolicySetCreateNetworkAccessPolicySetConditionChildrenLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
 type RequestNetworkAccessPolicySetCreateNetworkAccessPolicySetConditionDatesRange struct {
 	EndDate   string `json:"endDate,omitempty"`   //
 	StartDate string `json:"startDate,omitempty"` //
@@ -508,26 +408,6 @@ type RequestNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDCondition stru
 }
 
 type RequestNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDConditionLink struct {
-	Href string `json:"href,omitempty"` //
-	Rel  string `json:"rel,omitempty"`  //
-	Type string `json:"type,omitempty"` //
-}
-
-type RequestNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDConditionChildren struct {
-	ConditionType   string                                                                              `json:"conditionType,omitempty"`   // <ul><li>Inidicates whether the record is the condition itself(data) or a logical(or,and) aggregation</li> <li>Data type enum(reference,single) indicates than "conditonId" OR "ConditionAttrs" fields should contain condition data but not both</li> <li>Logical aggreation(and,or) enum indicates that additional conditions are present under the children field</li></ul>
-	IsNegate        *bool                                                                               `json:"isNegate,omitempty"`        // Indicates whereas this condition is in negate mode
-	Link            *RequestNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDConditionChildrenLink `json:"link,omitempty"`            //
-	DictionaryName  string                                                                              `json:"dictionaryName,omitempty"`  // Dictionary Name
-	AttributeName   string                                                                              `json:"attributeName,omitempty"`   // Atribute Name
-	Operator        string                                                                              `json:"operator,omitempty"`        // Operator
-	AttributeValue  string                                                                              `json:"attributeValue,omitempty"`  // Attibute Name
-	Description     string                                                                              `json:"description,omitempty"`     // Condition description
-	ID              string                                                                              `json:"id,omitempty"`              //
-	Name            string                                                                              `json:"name,omitempty"`            // Condition name
-	DictionaryValue string                                                                              `json:"dictionaryValue,omitempty"` // Dictionary value
-}
-
-type RequestNetworkAccessPolicySetUpdateNetworkAccessPolicySetByIDConditionChildrenLink struct {
 	Href string `json:"href,omitempty"` //
 	Rel  string `json:"rel,omitempty"`  //
 	Type string `json:"type,omitempty"` //
